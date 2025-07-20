@@ -7,7 +7,7 @@ const NavItems = () => {
      const navItems = [{label: 'Home', href: '/'},
           {label: 'Companions', href: '/companions'},
           {label: 'My Journey', href: '/my-journey'},
-          {label: 'SignIn', href: '/signin'}]
+          ]
 
       const pathname = usePathname();    
   return (
