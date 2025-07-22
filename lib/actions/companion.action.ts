@@ -65,3 +65,16 @@ export const getAllCompanions = async ({
   if (error) throw new Error(error.message);
   return companions;
 };
+export const getCompanion = async(id:string)=>{
+    const supabase = supabaseclient();
+    const { data, error } = await supabase
+        .from("companions")
+        .select()
+        .eq("id", id)
+        .single();
+        if(error) {
+            console.log("Error fetching companion:" , error.message);
+        }
+        
+    return data;
+}

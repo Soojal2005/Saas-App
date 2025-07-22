@@ -5,6 +5,11 @@ const nextConfig: NextConfig = {
   experimental: {
     serverActions: {},
   },
+  images:{
+    remotePatterns: [
+      {hostname: "img.clerk.com"},
+    ]
+  }
 };
 
 export default nextConfig;
