@@ -2,6 +2,8 @@
 
 import { auth } from "@clerk/nextjs/server";
 import { supabaseclient } from "@/lib/Supabase";
+import { features } from "node:process";
+
 
 // Optional: type definition
 type GetAllCompanions = {
@@ -53,9 +55,7 @@ export const getAllCompanions = async ({
   } else if (cleanSubject) {
     query = query.ilike("subject", `%${cleanSubject}%`);
   } else if (cleanTopic) {
-    query = query.or(
-      `topic.ilike.%${cleanTopic}%,name.ilike.%${cleanTopic}%`
-    );
+    query = query.or(`topic.ilike.%${cleanTopic}%,name.ilike.%${cleanTopic}%`);
   }
 
   query = query.range((page - 1) * limit, page * limit - 1);
@@ -65,16 +65,123 @@ export const getAllCompanions = async ({
   if (error) throw new Error(error.message);
   return companions;
 };
-export const getCompanion = async(id:string)=>{
-    const supabase = supabaseclient();
-    const { data, error } = await supabase
-        .from("companions")
-        .select()
-        .eq("id", id)
-        .single();
-        if(error) {
-            console.log("Error fetching companion:" , error.message);
-        }
-        
-    return data;
+export const getCompanion = async (id: string) => {
+  const supabase = supabaseclient();
+  const { data, error } = await supabase
+    .from("companions")
+    .select()
+    .eq("id", id)
+    .single();
+  if (error) {
+    console.log("Error fetching companion:", error.message);
+  }
+
+  return data;
+};
+
+export const addToSessionHistory = async (companionId: string) => {
+  const { userId } = await auth();
+  const supabase = supabaseclient();
+  const { data, error } = await supabase.from("session_history").insert({
+    companion_id: companionId,
+    user_id: userId,
+  });
+  if (error) throw new Error(error.message);
+  return data;
+};
+
+// export const getRecentSessions = async (limit = 10) => {
+//   const supabase = supabaseclient();
+//   const { data, error } = await supabase
+//     .from("session_history")
+//     .select(`companions:companion_id (*)`)
+//     .order("created_at", { ascending: false })
+//     .limit(limit);
+// if(error){
+//   throw new Error(error?.message);
+// }
+// return data.map(({companions})=>companions);
+
+// };
+
+
+export const getRecentSessions = async (limit = 10): Promise<Companion[]> => {
+  const supabase = supabaseclient();
+
+  const { data, error } = await supabase
+    .from("session_history")
+    .select("companions:companion_id (*)")
+    .order("created_at", { ascending: false })
+    .limit(limit);
+
+  if (error) {
+    throw new Error(error.message);
+  }
+  console.log("Raw Supabase session data:", data);
+
+  return data.map(({ companions }) => companions as Companion);
+};
+
+
+
+
+
+export const getUserSessions = async (userId:string,limit=10) => {
+  const supabase = supabaseclient();
+  const { data, error } = await supabase
+    .from("session_history")
+    .select(`companions:companion_id (*)`)
+    .eq("user_id",userId)
+    .order("created_at", { ascending: false })
+    .limit(limit);
+if(error){
+  throw new Error(error?.message);
+}
+return data.flatMap(({ companions }) => companions);
+
+};
+
+// companion.action.ts
+// import { supabaseclient } from "../utils/supabase"; // adjust path
+// import { Companion } from "@/types";
+
+export const getUserCompanion = async (userId: string): Promise<Companion[]> => {
+  const supabase = supabaseclient();
+
+  const { data, error } = await supabase
+    .from("companions")
+    .select("*") // make sure you're selecting everything needed
+    .eq("author", userId);
+
+  if (error) throw new Error(error.message);
+
+  console.log("✅ Returned data from Supabase:", data); // Debug print
+
+  // ✅ This MUST be a flat array
+  return data as Companion[];
+};
+
+export const newCompanionPermission = async()=>{
+  const {userId,has} = await auth();
+  const supabase = supabaseclient();
+  let limit = 0;
+  if(has({plan:'Elite'})){
+    return true;
+  }else if(has({feature:"3_companion_limit"})){
+    limit =  3;
+  }else if(has({feature:"10_companion_limit"})){
+    limit = 10;
+  }
+  const{data,error} = await supabase
+  .from('companions').select('id',{count:'exact'})
+  .eq('author',userId)
+  if(error){
+    throw new Error(error.message);
+  }
+  const companioncount = data?.length;
+  if(companioncount>=limit){
+    return false;
+  }else{
+    return true;
+  }
 }

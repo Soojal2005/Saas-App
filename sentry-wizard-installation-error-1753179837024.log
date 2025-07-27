@@ -1,0 +1,66 @@
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\opentelemetry\node_modules\@sentry\core\build\cjs\instrument\globalUnhandledRejection.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-connect\node_modules\@opentelemetry\semantic-conventions\build\esm\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-hapi\node_modules\@opentelemetry\core\build\src\utils\promise.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\ajv-formats\node_modules\ajv\dist\refs\data.json'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\vercel-edge\node_modules\@opentelemetry\core\node_modules\@opentelemetry\semantic-conventions\build\esm\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-pg\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR EBADF: bad file descriptor, write
+npm warn tar TAR_ENTRY_ERROR EBADF: bad file descriptor, write
+npm warn tar TAR_ENTRY_ERROR EBADF: bad file descriptor, write
+npm warn tar TAR_ENTRY_ERROR EBADF: bad file descriptor, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-connect\node_modules\@opentelemetry\core\build\src\utils\promise.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-undici\node_modules\@opentelemetry\core\build\src\utils\promise.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-hapi\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR EBADF: bad file descriptor, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\node\node_modules\@opentelemetry\core\node_modules\@opentelemetry\semantic-conventions\build\esm\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-undici\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-koa\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\sql-common\node_modules\@opentelemetry\semantic-conventions\build\esm\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-mongoose\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR EBADF: bad file descriptor, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\schema-utils\node_modules\ajv\dist\refs\data.json'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\opentelemetry\node_modules\@sentry\core\build\esm\instrument\globalUnhandledRejection.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\vercel-edge\node_modules\@opentelemetry\core\build\src\utils\promise.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\node\node_modules\@opentelemetry\resources\node_modules\@opentelemetry\semantic-conventions\build\esm\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR EBADF: bad file descriptor, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\node\node_modules\@opentelemetry\sdk-trace-base\node_modules\@opentelemetry\semantic-conventions\build\esm\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-amqplib\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR EBADF: bad file descriptor, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\node\node_modules\@opentelemetry\core\build\esm\utils\promise.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\vercel-edge\node_modules\@opentelemetry\core\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@sentry\nextjs\node_modules\@sentry\core\build\cjs\instrument\globalUnhandledRejection.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-http\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-express\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-pg\node_modules\@opentelemetry\semantic-conventions\build\src\resource\SemanticResourceAttributes.js.map'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open 'C:\Users\lnc\New folder (3)\NextJS\lam_project\node_modules\@opentelemetry\instrumentation-connect\node_modules\@opentelemetry\semantic-conventions\build\esnext\resource\SemanticResourceAttributes.js.map'
+npm error A complete log of this run can be found in: C:\Users\lnc\AppData\Local\npm-cache\_logs\2025-07-22T10_22_51_426Z-debug-0.log
