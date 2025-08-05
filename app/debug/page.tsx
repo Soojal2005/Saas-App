@@ -1,7 +1,7 @@
 import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 
-const page = async () => {
+ const page = async () => {
   const authResult = await auth();
   console.log('Full auth result:', authResult);
   console.log('userId:', authResult.userId);
@@ -13,7 +13,7 @@ const page = async () => {
   }
   
   return (
-    // ... your component
-    <h1>hello</h1>
+   <div>Debug Page with async</div>
   )
 }
+export default page;
