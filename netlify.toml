@@ -2,5 +2,13 @@
   command = "npm run build"
   publish = ".next"
 
-[[plugins]]
-  package = "@netlify/next"
+[dev]
+  command = "next dev"
+  port = 3000
+  targetPort = 3000
+  framework = "next"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
