@@ -12,6 +12,7 @@
     "@clerk/nextjs": "^6.25.4",
     "@hookform/resolvers": "^5.1.1",
     "@jsmastery/utils": "^1.0.2",
+    "@netlify/next": "^1.4.9",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-select": "^2.2.5",
