@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
-import CompanianCard from '@/components/Companioncard.tsx'
+import CompanianCard from '@/components/Companioncard'
 import CompanionList from '@/components/CompanionList'
 import CTA from '@/components/CTA'
 import { recentSessions } from '@/constants'
