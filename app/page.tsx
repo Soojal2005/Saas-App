@@ -4,6 +4,8 @@ import CompanianCard from '@/components/Companioncard'
 import CompanionList from '@/components/CompanionList'
 import CTA from '@/components/CTA'
 import { recentSessions } from '@/constants'
+
+export const dynamic = 'force-dynamic'; 
 import { getAllCompanions, getRecentSessions } from '@/lib/actions/companion.action'
 import { getSubjectColor } from '@/lib/utils'
 
