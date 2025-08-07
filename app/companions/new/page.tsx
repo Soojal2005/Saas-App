@@ -10,6 +10,7 @@ const page = async () => {
   console.log('userId', userId);
   if (!userId) redirect('/signin');
   const canCreateCompanion = await newCompanionPermission();
+  console.log('canCreateCompanion', canCreateCompanion);
   return (
     <main className='p-10 min-lg:w-1/3 min-mid:w-2/3 items-center justify-center mx-auto'>
       {canCreateCompanion ? (

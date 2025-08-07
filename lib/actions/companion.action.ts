@@ -162,16 +162,25 @@ export const getUserCompanion = async (userId: string): Promise<Companion[]> => 
 };
 
 export const newCompanionPermission = async()=>{
-  const {userId,has} = await auth();
+  const {userId,has,orgId} = await auth();
   const supabase = supabaseclient();
+  
+console.log("orgId:", orgId); // This must NOT be null
+console.log("has Elite:", has({ plan: "Elite" }));
   let limit = 0;
-  if(has({plan:'Elite'})){
-    return true;
-  }else if(has({feature:"3_companion_limit"})){
-    limit =  3;
-  }else if(has({feature:"10_companion_limit"})){
-    limit = 10;
-  }
+  if (has({ plan: 'elite' })) {
+  console.log("User has Elite plan");
+  return true;
+} else if (has({ feature: "basic" })) {
+  limit = 3;
+  console.log("User has 3 companion limit");
+} else if (has({ feature: "premium" })) {
+  limit = 10;
+  console.log("User has 10 companion limit");
+} else {
+  console.log("User has no valid feature or plan");
+  return false;
+}
   const{data,error} = await supabase
   .from('companions').select('id',{count:'exact'})
   .eq('author',userId)
